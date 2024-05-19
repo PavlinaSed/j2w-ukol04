@@ -107,3 +107,44 @@ a:hover .vizitka {
     margin: 1em;
     box-shadow: 5px 5px 10px black;
 }
+
+form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+h2, p {
+    margin: 1em auto;
+    text-align: center;
+    color: white;
+}
+
+button[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+    color: white;
+}
+
+input {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    color: white;
+    padding-top: 3px;
+}
