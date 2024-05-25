@@ -1,18 +1,18 @@
 package cz.czechitas.java2webapps.ukol3.service;
 
-import cz.czechitas.java2webapps.ukol3.entity.Vizitka;
+import cz.czechitas.java2webapps.ukol3.entity.BusinessCard;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class VizitkaService {
-    private final List<Vizitka> seznamVizitek = new ArrayList<>();
+public class BusinessCardService {
+    private final List<BusinessCard> listOfBusinessCards = new ArrayList<>();
 
-    public VizitkaService() {
-        seznamVizitek.add(
-                new Vizitka(
+    public BusinessCardService() {
+        listOfBusinessCards.add(
+                new BusinessCard(
                         "Dita (Přikrylová) Formánková",
                         "Czechitas z. s.",
                         "Václavské náměstí 837/11",
@@ -22,8 +22,8 @@ public class VizitkaService {
                         "www.czechitas.cz"
                 )
         );
-        seznamVizitek.add(
-                new Vizitka(
+        listOfBusinessCards.add(
+                new BusinessCard(
                         "Barbora Bühnová",
                         "Czechitas z. s.",
                         "Škrobárenská 511/3",
@@ -33,8 +33,8 @@ public class VizitkaService {
                         "www.czechitas.cz"
                 )
         );
-        seznamVizitek.add(
-                new Vizitka(
+        listOfBusinessCards.add(
+                new BusinessCard(
                         "Monika Ptáčníková",
                         "Czechitas z. s.",
                         "Technologická 372/2",
@@ -44,8 +44,8 @@ public class VizitkaService {
                         "www.czechitas.cz"
                 )
         );
-        seznamVizitek.add(
-                new Vizitka(
+        listOfBusinessCards.add(
+                new BusinessCard(
                         "Mirka Zatloukalová",
                         "Czechitas z. s.",
                         "Vavrečkova 5262",
@@ -55,8 +55,8 @@ public class VizitkaService {
                         "www.czechitas.cz"
                 )
         );
-        seznamVizitek.add(
-                new Vizitka(
+        listOfBusinessCards.add(
+                new BusinessCard(
                         "Ondřej Čejka",
                         "Czechitas z. s.",
                         "Jungmannova 3",
@@ -66,8 +66,8 @@ public class VizitkaService {
                         "www.czechitas.cz"
                 )
         );
-        seznamVizitek.add(
-                new Vizitka(
+        listOfBusinessCards.add(
+                new BusinessCard(
                         "Kateřina Reiglová",
                         "Czechitas z. s.",
                         "Lipová 1789/9",
@@ -79,17 +79,19 @@ public class VizitkaService {
         );
     }
 
-    public List<Vizitka> getAll() {
-        return seznamVizitek;
+    public List<BusinessCard> getAll() {
+        return listOfBusinessCards;
     }
 
-    public Vizitka getById(int id) {
-        return seznamVizitek.get(id);
+    public BusinessCard getById(int id) {
+        return listOfBusinessCards.get(id);
     }
-    public void append(Vizitka vizitka) {
-        seznamVizitek.add(vizitka);
+
+    public void append(BusinessCard businessCard) {
+        listOfBusinessCards.add(businessCard);
     }
+
     public void deleteById(int id) {
-        seznamVizitek.remove(id);
+        listOfBusinessCards.remove(id);
     }
 }

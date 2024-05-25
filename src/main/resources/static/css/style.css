@@ -22,14 +22,14 @@ a {
     text-decoration: none;
 }
 
-.seznam {
+.list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 2em;
 }
 
-.vizitka {
+.businessCard {
     width: 36em;
     height: 16em;
     border: 1px solid gray;
@@ -50,13 +50,14 @@ a {
     align-items: center;
 }
 
-a:hover .vizitka {
+a:hover .businessCard {
     box-shadow: 10px 10px 10px black;
     transform: translate(-5px, -5px);
     transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.jmeno {
+
+.name {
     font-weight: bold;
     font-size: 18pt;
     text-align: center;
@@ -68,13 +69,13 @@ a:hover .vizitka {
     margin-bottom: 2em;
 }
 
-.udaje {
+.data {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.kontakty {
+.contact {
     text-align: right;
 }
 
@@ -100,7 +101,7 @@ a:hover .vizitka {
     text-decoration: underline;
 }
 
-.mapa {
+.map {
     width: 36em;
     height: 36em;
     border: 1px solid gray;
@@ -108,7 +109,7 @@ a:hover .vizitka {
     box-shadow: 5px 5px 10px black;
 }
 
-form{
+form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -121,16 +122,17 @@ h2, p {
     color: white;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     display: block;
     width: 60%;
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: #3b3b4f;
+    background-color: #0a0a23;
     border-color: white;
     min-width: 300px;
     color: white;
+    cursor: pointer;
 }
 
 input {
